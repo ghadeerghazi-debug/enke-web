@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصة إنكي الرقمية — جرّبها الآن</title>
+<meta name="description" content="تطبيق ومنصة مؤسسة إنكي للدراسات والبحوث — جرّب التطبيق والمساعد الذكي الآن">
+<link rel="icon" href="../favicon.png">
+<style>
+  :root{
+    --paper:#FAF5EA; --deep:#F2E9D7; --card:#FFFDF8; --line:#EADFC8;
+    --ink:#46392A; --soft:#7C6C50; --head:#382A12;
+    --gold:#C98A2E; --goldD:#8F6716; --band:#F1C57A; --bandS:#F6DCA8;
+  }
+  *{margin:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:"Geeza Pro","Segoe UI",system-ui,sans-serif;min-height:100vh}
+  .band{background:linear-gradient(180deg,var(--band),var(--bandS) 60%,transparent);padding:46px 20px 30px;text-align:center;position:relative;overflow:hidden}
+  .band::after{content:"";position:absolute;inset:auto 0 0 0;height:70px;opacity:.2;
+    background:var(--goldD);
+    clip-path:polygon(0 100%,0 70%,8% 70%,8% 45%,16% 45%,16% 70%,24% 70%,24% 100%,34% 100%,34% 55%,42% 55%,42% 28%,50% 28%,50% 8%,58% 8%,58% 28%,66% 28%,66% 55%,74% 55%,74% 100%,82% 100%,82% 62%,90% 62%,90% 40%,96% 40%,96% 62%,100% 62%,100% 100%)}
+  .band img.logo{width:96px;height:96px;border-radius:50%;border:3px solid rgba(255,255,255,.75);box-shadow:0 12px 30px -12px rgba(90,64,20,.5)}
+  h1{font-size:clamp(24px,5.4vw,34px);color:var(--head);margin:14px 0 6px}
+  .band p{color:#5A4014;font-size:14.5px;max-width:34ch;margin:0 auto;line-height:1.9;position:relative;z-index:1}
+  .grid{max-width:900px;margin:26px auto 10px;padding:0 18px;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--card);border-radius:22px;padding:22px 18px 20px;text-align:center;
+    box-shadow:0 14px 34px -18px rgba(122,94,44,.35);display:flex;flex-direction:column;align-items:center;gap:10px}
+  .card img.qr{width:170px;height:170px;border-radius:14px;border:1px solid var(--line)}
+  .card h2{font-size:18px;color:var(--head)}
+  .card p{font-size:12.5px;color:var(--soft);line-height:1.8;min-height:3.6em}
+  .btn{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;
+    font-size:14px;padding:11px 26px;border-radius:24px;box-shadow:0 8px 18px -8px rgba(201,138,46,.6)}
+  .btn.o{background:transparent;color:var(--goldD);border:1.5px solid var(--gold);box-shadow:none}
+  .tag{font-size:11px;color:#fff;background:var(--gold);border-radius:20px;padding:3px 12px;font-weight:700}
+  .hint{text-align:center;color:var(--soft);font-size:12.5px;padding:8px 20px 6px;line-height:1.9}
+  footer{text-align:center;color:var(--soft);font-size:11.5px;padding:22px 16px 30px}
+  footer b{color:var(--goldD)}
+  @media (prefers-color-scheme: dark){
+    :root{--paper:#201808;--deep:#2A2110;--card:#332813;--line:#4A3C21;--ink:#F1E8D4;--soft:#C4B492;--head:#F7F0DF}
+    .band p{color:#4A3512}
+  }
+</style>
+</head>
+<body>
+  <div class="band">
+    <img class="logo" src="../icons/Icon-192.png" alt="مؤسسة إنكي">
+    <h1>منصة إنكي الرقمية</h1>
+    <p>مؤسسة إنكي للدراسات والبحوث — التطبيق، والمساعد الذكي، وجائزة الحكيم الدولية 2026 بين يديك الآن</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <span class="tag">تطبيق الويب</span>
+      <img class="qr" src="qr_web.png" alt="QR تطبيق إنكي">
+      <h2>تطبيق إنكي</h2>
+      <p>الأخبار والدراسات والإصدارات ومجلة إنكي وجائزة الحكيم — بالعربية والإنجليزية، مع الوضع الليلي</p>
+      <a class="btn" href="https://enke-web.onrender.com">افتح التطبيق</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">ذكاء اصطناعي</span>
+      <img class="qr" src="qr_bot.png" alt="QR مساعد إنكي على تيليجرام">
+      <h2>مساعد إنكي على تيليجرام</h2>
+      <p>اسأل عن فكر آل الحكيم وإصدارات المؤسسة وشروط جائزة الحكيم — إجابات فورية مدعومة بالذكاء الاصطناعي</p>
+      <a class="btn" href="https://t.me/EnkeAssistantBot">ابدأ المحادثة</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">الموقع الرسمي</span>
+      <img class="qr" src="qr_site.png" alt="QR موقع إنكي">
+      <h2>enke.iq</h2>
+      <p>الموقع الرسمي لمؤسسة إنكي للدراسات والبحوث — الأرشيف الكامل للأخبار والدراسات والإصدارات</p>
+      <a class="btn o" href="https://enke.iq">زيارة الموقع</a>
+    </div>
+  </div>
+
+  <p class="hint">📱 وجّه كاميرا هاتفك نحو أي رمز — لا حاجة لأي تطبيق إضافي<br>
+  🏆 جائزة الحكيم الدولية 2026: استلام الدراسات من 1 إلى 10 تشرين الأول 2026 — التفاصيل الكاملة داخل التطبيق</p>
+
+  <footer>
+    <b>مؤسسة إنكي للدراسات والبحوث</b> · Enki Foundation for Studies and Research<br>
+    بغداد — العراق · info@enke.iq · 07782349969 / 07749888258
+  </footer>
+</body>
+</html>
