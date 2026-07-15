@@ -41,7 +41,11 @@ def fetch(url: str) -> str:
 
 
 def clean(text: str) -> str:
-    return html.unescape(re.sub(r"\s+", " ", text)).strip()
+    out = html.unescape(re.sub(r"\s+", " ", text)).strip()
+    # strip social-post artefacts from scraped titles/bodies
+    out = re.sub(r"#[^\s#]+", "", out)          # hashtags
+    out = out.replace("_", " ")                  # underscore separators
+    return re.sub(r"\s{2,}", " ", out).strip(" -—·")
 
 
 def item_id(url: str) -> str:
