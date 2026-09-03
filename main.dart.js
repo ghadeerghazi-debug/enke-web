@@ -52498,7 +52498,7 @@ break}n.d=!0
 m=n.a.cl($.dL(),t.C)
 p=4
 s=7
-return A.B(n.b.aJs("https://enke-web.onrender.com/content.json",null,null,null,A.b1b("GET",A.aXB(null,B.Qx)),null,t.N),$async$xy)
+return A.B(n.b.aJs("https://enke-web-lezm.onrender.com/content.json",null,null,null,A.b1b("GET",A.aXB(null,B.Qx)),null,t.N),$async$xy)
 case 7:l=b
 i=l.a
 i.toString
