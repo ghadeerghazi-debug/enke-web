@@ -52395,7 +52395,7 @@ $S:450}
 A.xa.prototype={}
 A.aUe.prototype={
 $1(a){var s=A.b19(null)
-return new A.xm("","https://enke-chat-api.onrender.com/api/chat",s)},
+return new A.xm("","https://enke-chat-api-bd0v.onrender.com/api/chat",s)},
 $S:454}
 A.po.prototype={
 dN(){var s=A.dY(this).cl($.dL(),t.C).RW("bookmarks")
